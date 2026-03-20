@@ -1,0 +1,74 @@
+/* RESET */
+body {
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+  height: 100vh;
+  background: linear-gradient(to right, #0d6efd, #000);
+  color: white;
+}
+
+.perfil {
+  width: 260px;
+  max-width: 85%;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  
+  /* Efeito glow */
+  box-shadow: 
+    0 0 15px rgba(13, 110, 253, 0.6),
+    0 0 30px rgba(13, 110, 253, 0.4),
+    0 0 45px rgba(13, 110, 253, 0.2);
+
+  /* Animação suave */
+  animation: flutuar 3s ease-in-out infinite;
+  transition: 0.3s;
+}
+
+/* Hover mais moderno */
+.perfil:hover {
+  transform: scale(1.05);
+}
+@keyframes flutuar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* TÍTULOS */
+h2 {
+  font-weight: bold;
+}
+
+/* PROJETOS */
+.projeto {
+  transition: 0.3s;
+}
+
+.projeto:hover {
+  transform: translateY(-10px);
+}
+
+/* BOTÕES */
+.btn {
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .perfil {
+    width: 180px;
+  }
+}
